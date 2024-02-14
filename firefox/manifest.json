@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "Open Path of Exile Media",
+  "version": "1.0",
+  "description": "Opens Path of Exile Media in new tabs and windows",
+  "permissions": ["tabs", "webRequest", "<all_urls>"],
+  "chrome_url_overrides": {
+    "newtab": "poem.html"
+  },
+  "homepage_url": "https://www.pathofexile.media/",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_icon": {
+      "19": "icon.png",
+      "38": "icon.png"
+    }
+  },
+  "icons": {
+    "48": "icon.png",
+    "96": "icon.png"
+  }
+}
